@@ -85,3 +85,9 @@ summary:focus{
 details:hover{
     border-color: gray;
 }
+.correcto{
+    border-color: green;
+}
+.incorrecto{
+    border-color: crimson
+}
