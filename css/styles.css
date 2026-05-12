@@ -39,13 +39,49 @@ nav ul li a:focus{
     outline-offset: 4px;
 }
 nav ul li a[aria-current="page"]{
-    color: deepskyblue;
+    color: var(--color-tono);
+    font-weight: bold;
 }
 
 nav ul li a:hover{
     color: dodgerblue;
 }
+main{
+    width: 75%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
 main section{
+    margin-bottom: 4rem;
+}
+details{
     background-color: var(--color-secundario);
-    
+    border: 2px solid lightgray;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    padding-top: 1.5rem;
+}
+summary{
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+details article{
+    margin-top: 1rem;
+    line-height: 1.8;
+}
+main p{
+    line-height: 1.8;
+}
+
+main h2{
+    margin-bottom: 1.8rem;
+}
+summary:focus{
+    outline: 3px solid black;
+    outline-offset: 4px;
+}
+details:hover{
+    border-color: gray;
 }
