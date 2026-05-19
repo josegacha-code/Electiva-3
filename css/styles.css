@@ -1,4 +1,5 @@
 @import url('./variables.css');
+@import url('./efects.css');
 
 /* ========================================= */
 /* CONFIGURACIÓN GENERAL */
@@ -11,10 +12,32 @@
 }
 
 body{
+    /* ========================================= */
+/* BODY DINÁMICO Y COLORIDO */
+/* ========================================= */
+
     background:
-    radial-gradient(circle at top left, #d9f3ff 0%, transparent 25%),
-    radial-gradient(circle at bottom right, #ffe8f2 0%, transparent 25%),
-    linear-gradient(to bottom, #eef7ff, #f8fbff);
+    radial-gradient(circle at 15% 20%, rgba(255,182,193,0.35) 0%, transparent 20%),
+    radial-gradient(circle at 85% 15%, rgba(135,206,250,0.35) 0%, transparent 22%),
+    radial-gradient(circle at 50% 80%, rgba(255,255,153,0.28) 0%, transparent 25%),
+    radial-gradient(circle at 10% 90%, rgba(144,238,144,0.28) 0%, transparent 22%),
+    linear-gradient(
+        135deg,
+        #eef7ff,
+        #dff3ff,
+        #fcefff,
+        #f5f9ff
+    );
+
+    background-size:
+    400px 400px,
+    500px 500px,
+    450px 450px,
+    350px 350px,
+    100% 100%;
+
+    animation:
+    fondoAnimado 18s ease infinite;
 
     background-attachment: fixed;
 
@@ -25,7 +48,12 @@ body{
     font-size: 1.7rem;
 
     line-height: 1.8;
+
+    overflow-x: hidden;
+
+    position: relative;
 }
+
 
 /* ========================================= */
 /* HEADER */
@@ -421,6 +449,88 @@ a:hover{
 
     main h2{
         font-size: 1.6rem;
+    }
+
+}
+/* ========================================= */
+/* ANIMACIÓN DE FONDO */
+/* ========================================= */
+
+@keyframes fondoAnimado{
+
+    0%{
+        background-position:
+        0% 0%,
+        100% 0%,
+        50% 100%,
+        0% 100%,
+        0% 0%;
+    }
+
+    50%{
+        background-position:
+        10% 5%,
+        90% 10%,
+        55% 90%,
+        5% 85%,
+        0% 0%;
+    }
+
+    100%{
+        background-position:
+        0% 0%,
+        100% 0%,
+        50% 100%,
+        0% 100%,
+        0% 0%;
+    }
+
+}
+/* ========================================= */
+/* BRILLOS TECNOLÓGICOS */
+/* ========================================= */
+
+body::after{
+
+    content: "";
+
+    position: fixed;
+
+    width: 200%;
+
+    height: 200%;
+
+    top: -50%;
+
+    left: -50%;
+
+    background:
+    repeating-linear-gradient(
+        45deg,
+        rgba(255,255,255,0.03) 0px,
+        rgba(255,255,255,0.03) 2px,
+        transparent 2px,
+        transparent 14px
+    );
+
+    animation:
+    lineas 30s linear infinite;
+
+    pointer-events: none;
+}
+
+/* ========================================= */
+/* ANIMACIÓN LÍNEAS */
+/* ========================================= */
+
+@keyframes lineas{
+
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
     }
 
 }
