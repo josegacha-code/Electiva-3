@@ -540,3 +540,80 @@ body::after{
     }
 
 }
+.actividad-interactiva{
+    background: rgba(255,255,255,0.92);
+
+    border-radius: 2rem;
+
+    padding: 2.5rem;
+
+    margin-bottom: 5rem;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08);
+
+    transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.actividad-interactiva:hover{
+    transform: translateY(-6px);
+
+    box-shadow:
+    0 18px 35px rgba(0,0,0,0.14);
+}
+.contenedor-actividad{
+    border: 6px solid #8ecbff;
+
+    border-radius: 2rem;
+
+    padding: 1rem;
+
+    margin-top: 2rem;
+
+    background: linear-gradient(
+        135deg,
+        rgba(220,240,255,0.8),
+        rgba(240,255,240,0.8)
+    );
+
+    transition:
+    border-color 0.4s ease,
+    transform 0.3s ease,
+    box-shadow 0.4s ease;
+
+    overflow: hidden;
+}
+.actividad-verdadero:hover{
+    border-color: #90ee90;
+
+    box-shadow:
+    0 0 25px rgba(144,238,144,0.6);
+
+    transform: scale(1.01);
+    transition:
+    border-color 0.4s ease,
+    transform 0.3s ease,
+    box-shadow 0.4s ease;
+
+    overflow: hidden;
+}
+.contenedor-boton{
+    display: flex;
+    justify-content: center;
+}
+.boton-unidad{
+    padding: 5px 10px;
+    background-color: #90ee90;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #222;
+}
+.boton-unidad:hover{
+    transform: scale(1.03);
+    transition:
+    border-color 0.4s ease,
+    transform 0.3s ease,
+    box-shadow 0.4s ease;
+}
