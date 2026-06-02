@@ -569,7 +569,7 @@ a:hover{
     border: 3px solid #2ecc71;
 }
 .ejemplo::before {
-    content: "💡 Caso práctico";
+    content: "💡 Caso de Ejemplo";
     display: inline-block;
 
     background: #2ecc71;
